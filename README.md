@@ -13,7 +13,7 @@ Also you have to download MIXXX-Ai-tool-of-mixxx and connect with front, back co
 Front -> npm start<br>
 Backend -> uvicorn server:app --reload
 
-<h3 align="center">Project-overview & Working video</h3>
+# <h3 align="center">Project-overview & Working video</h3>
 <p align="center">
   <img src="images/mixxx-video.gif" width="400">
 </p>
