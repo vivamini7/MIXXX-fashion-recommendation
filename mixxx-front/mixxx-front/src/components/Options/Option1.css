@@ -1,0 +1,220 @@
+@import url('https://fonts.cdnfonts.com/css/gunter-test');
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    color: white;
+    height: 100vh;
+    padding: 0px;
+  }
+  
+  .results-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #e57242;
+    font-family: "Gunter Test", sans-serif;
+  }
+
+  @import url('https://fonts.cdnfonts.com/css/gunter-test');
+  
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .results-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* 카드 간격 */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .result-card {
+    width: 240px;
+    height: 260px;
+    background-color: #e57242;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s, opacity 0.5s, width 0.5s, height 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+    transform: scale(0.9);
+    position: relative;
+  }
+  
+  /* 가운데 카드 확대 */
+  .result-card.active {
+    width: 320px;
+    height: 300px;
+    transform: scale(1.2);
+    z-index: 10;
+    opacity: 1;
+  }
+
+  /* 이미지 크기 조정 */
+.result-card img {
+  width: 80%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 2px;
+  object-fit: contain;
+  margin-top:20px;
+}
+
+  
+  /* 상단 아이콘 (하트, 확대 버튼) */
+  .card-header {
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e57242;
+    margin-left:16px;
+  }
+  
+  .icon:hover {
+    background: #c94c1d;
+    color: white;
+  }
+  
+  /* 우측 상단 번호 */
+  .card-number {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+  }
+  
+  /* 하단 버튼 */
+  .like-button {
+    position: absolute;
+    bottom: 60px;
+    right: 15px;
+    background: none;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .like-button:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* 하단 설명 */
+  .description {
+    position: absolute;
+    bottom: 0px; /* 박스 하단에 위치 */
+    left: 50%; /* 가운데 정렬 */
+    transform: translateX(-50%); /* 정확한 중앙 배치 */
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    color: black;
+    width: 50%; /* 카드 너비의 80%를 차지하도록 설정 */
+    height: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  /* 슬라이드 버튼 */
+  .arrow-buttons {
+    position: absolute;
+    top: -50px; /* 위쪽 중앙으로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row; /* 🔹 가로 정렬 */
+    gap: 20px; /* 🔹 버튼 간 간격 조정 */
+  }
+  /* Retry 버튼과 화살표를 가로로 배치 */
+.retry-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* 🔹 버튼 사이 간격 */
+    margin-top: 40px;
+  }
+
+  .carousel-button {
+    background: #e57242;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    margin-top:50px;
+  }
+  
+  .carousel-button:hover {
+    background: #c94c1d;
+    transform: scale(1.1);
+  }
+  
+  .retry-button {
+    margin-top: 50px;
+    background-color: #e57242;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  .retry-button:hover {
+    background-color: #c94c1d;
+  }
+  
