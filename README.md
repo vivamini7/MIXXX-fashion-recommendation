@@ -1,4 +1,4 @@
-# mixxx-fashion-recommendation
+# Mixxx-fashion-recommendation
 This project is for who concerning about fashion and looking for new clothes.
 Put your snapshot or another snapshot in fashion site and you have to choose what your want like color, lenght and style etc.
 When this is all over, recommendation clothes will apper as a result.
